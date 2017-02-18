@@ -5,12 +5,21 @@
 import random
 
 classes=["cleric", "fighter", "rogue", "wizard"]
+races=["dwarf", "elf", "halfling", "human"]
+abil=["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]
 
-#print classes[random (0,3)]
-
-#for n in range (0, 4):
-#  print classes[n]
+print "####################\nCharacter Generator\n####################"
 
 randomizer = random.randint(0, 3)
-
 print "Your character class is:", classes[randomizer]
+
+randomizer = random.randint(0,3)
+print "Your character race is:", races[randomizer] 
+
+
+for n in abil:
+  ability = random.randint(1,6) + random.randint(1,6) + random.randint(1,6)
+  print "Your", n, "is:", ability
+
+
+
